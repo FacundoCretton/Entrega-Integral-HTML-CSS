@@ -85,7 +85,7 @@ html {
   animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
 } */
 
-.about-us-question h3 {
+/* .about-us-question h3 {
   opacity: 0;
   animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
   animation-delay: 1s;
@@ -105,4 +105,4 @@ html {
 }
 .info-card:nth-child(3) {
   animation-delay: 0.9s;
-}
+} */

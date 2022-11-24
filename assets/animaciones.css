@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom-left;
+  transform: scaleX(1);
+}
+
+.boton1,
+.boton2 {
+  transition: all 0.1s ease-out;
+}
+.boton1:hover,
+.boton2:hover {
+  color: goldenrod;
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+  background: #343a40;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* .hero-info h1 {
+  animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-info p {
+  animation: fade 0.7s ease-in, slide-up 0.8s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.hero-info a {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.hero-card {
+  opacity: 0;
+  animation: fade 1s ease-in forwards, slide-right 1.3s ease-in-out;
+} */
+
+.about-us-question h3 {
+  opacity: 0;
+  animation: fade 1s ease-in forwards, slide-up 1.3s ease-in-out;
+  animation-delay: 1s;
+}
+
+.info-card {
+  opacity: 0;
+  animation: fade 0.8s ease-in forwards, slide-up 1.3s ease-in-out;
+}
+
+.info-card:nth-child(1) {
+  animation-delay: 0.7s;
+}
+
+.info-card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.info-card:nth-child(3) {
+  animation-delay: 0.9s;
+}

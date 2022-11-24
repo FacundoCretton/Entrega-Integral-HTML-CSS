@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Iniciar sesión</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="/assets/img/Logo1.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/registro.css" />
+    <link rel="stylesheet" href="/assets/animaciones.css" />
+    <link rel="stylesheet" href="/pages/index.html" />
+  </head>
+  <header>
+    <img class="logo" src="/assets/img/Logo2.png" alt="Logo Principal" />
+    <nav class="navbar">
+      <label for="menu-toggle" class="menu-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle" />
+      <ul class="navbar-list">
+        <li><a href="/pages/index.html">Inicio</a></li>
+        <li><a href="index.html#products">Próximos Conciertos</a></li>
+        <li><a href="index.html#about-us">¿Quiénes somos?</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <form class="formulario">
+      <h1>Login</h1>
+      <div class="contenedor">
+        <div class="input-contenedor">
+          <i class="fas fa-envelope icon"></i>
+          <input
+            type="email"
+            placeholder="Correo Electronico"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            required
+            minlength="8"
+          />
+        </div>
+        <input type="submit" value="Login" class="button" />
+
+        <p>
+          ¿No tienes una cuenta?
+          <a class="link" href="/pages/registro.html">Registrate </a>
+        </p>
+        <p>
+          <a class="link" href="/pages/index.html">Regresar </a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>

@@ -519,7 +519,7 @@ iframe {
 /* FOOTER */
 .pie-pagina {
   width: 100%;
-  background-color: #0a141d;
+  background-color: #000f08;
 }
 .pie-pagina .pie-pagina-sup {
   width: 100%;
@@ -557,7 +557,7 @@ iframe {
   line-height: 45px;
   color: #e6e6e6;
   margin-right: 10px;
-  background-color: #0d2033;
+  background-color: #000905;
   text-align: center;
   transition: all 300ms ease;
 }
@@ -565,10 +565,10 @@ iframe {
   color: yellow;
 }
 .pie-pagina .pie-pagina-inf {
-  background-color: #0a1a2a;
+  background-color: #000905;
   padding: 15px 10px;
   text-align: center;
-  color: #fff;
+  color: #e6e6e6;
 }
 .pie-pagina .pie-pagina-inf small {
   font-size: 15px;

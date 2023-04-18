@@ -149,12 +149,15 @@ p {
   #menu-toggle:checked + .navbar-list {
     display: flex;
   }
-}
-@media (min-width: 576px) {
   .formulario {
     margin: auto;
     width: 500px;
     margin-top: 150px;
     border-radius: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .formulario {
+    width: 80%;
   }
 }

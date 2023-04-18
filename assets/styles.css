@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
+:root {
+  /* bg */
+  --bg1: #000f08;
+
+  /* Textos */
+  --principal: #e6e6e6;
+  --blanco: #fff;
+  --blanco2: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,13 +18,14 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: rgb(30, 30, 30);
 }
 
 header {
   display: flex;
-  background-color: #000f08;
+  background-color: var(--bg1);
   width: 100%;
   height: 50px;
   justify-content: space-between;
@@ -48,12 +59,12 @@ header {
 
 .navbar-list a {
   font-size: 13px;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 #menu-toggle,
 .menu-label {
   display: none;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 main {
@@ -69,7 +80,7 @@ main {
   margin-top: 50px;
   padding: 50px 0px;
   width: 100%;
-
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,13 +106,13 @@ main {
 .hero-info h1 {
   font-size: 2em;
   font-weight: 800;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .hero-info p {
   font-size: 14px;
   width: 70%;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .hero-info p > span {
@@ -132,18 +143,18 @@ main {
 }
 .hero-button-black {
   background-color: black;
-  color: white;
+  color: var(--blanco);
 }
 
 .hero-button-white {
-  background-color: white;
+  background-color: var(--blanco2);
   color: black;
 }
 
 .hero-card {
   width: 400px;
-  color: #fff;
-  border: 10px inset #000f08;
+  color: var(--blanco);
+  border: 10px inset var(--bg1);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -157,7 +168,7 @@ main {
   /* display: flex; */
   /* padding: 70px 30px; */
   justify-content: space-around;
-  color: #e6e6e6;
+  color: var(--principal);
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -174,7 +185,7 @@ main {
   background-size: cover;
   background-position: center;
   width: 100%;
-  color: #e6e6e6;
+  color: var(--principal);
   text-align: center;
   margin-top: 50px;
 }
@@ -247,7 +258,7 @@ main {
 .product-top p {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--blanco);
 }
 
 .product-user {
@@ -274,7 +285,7 @@ main {
 }
 
 .precios-ubicaciones {
-  color: #fff;
+  color: var(--blanco);
   font-weight: 400;
 }
 
@@ -363,7 +374,7 @@ button:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .about-us-question {
@@ -375,13 +386,13 @@ button:hover {
 
 .about-us-question p {
   margin: 20px 0px 10px;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .about-us-question h4,
 h5 {
   padding-bottom: 10px;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 .about-us-container {
   display: flex;
@@ -436,12 +447,12 @@ h5 {
 
 .about-us-card h3 {
   padding: 15px 0px 60px;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .about-us-card p {
   font-size: 14px;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 /* CONTACT */
@@ -450,7 +461,7 @@ h5 {
   padding: 70px 30px;
   width: 100%;
   justify-content: space-around;
-  color: #e6e6e6;
+  color: var(--principal);
   flex-wrap: wrap;
   gap: 50px;
   scroll-margin-top: 115px;
@@ -468,7 +479,7 @@ h5 {
   background-size: cover;
   background-position: center;
   width: 100%;
-  color: #e6e6e6;
+  color: var(--principal);
   text-align: center;
   margin-top: 50px;
 }
@@ -505,7 +516,7 @@ h5 {
 }
 
 .info-column a {
-  color: #e6e6e6;
+  color: var(--principal);
 }
 
 .info-column p {
@@ -552,7 +563,7 @@ textarea {
 
 input[type="submit"] {
   background-color: #4caf50;
-  color: white;
+  color: var(--blanco2);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -566,7 +577,7 @@ input[type="submit"]:hover {
 /* FOOTER */
 .pie-pagina {
   width: 100%;
-  background-color: #000f08;
+  background-color: var(--bg1);
 }
 .pie-pagina .pie-pagina-sup {
   width: 100%;
@@ -588,21 +599,20 @@ input[type="submit"]:hover {
   width: 150px;
 }
 .pie-pagina .pie-pagina-sup .box h2 {
-  color: #e6e6e6;
+  color: var(--principal);
   margin-bottom: 25px;
   font-size: 20px;
 }
 .pie-pagina .pie-pagina-sup .box p {
-  color: #e6e6e6;
+  color: var(--principal);
   margin-bottom: 10px;
 }
 .pie-pagina .pie-pagina-sup .red-social a {
   display: inline-block;
-  text-decoration: none;
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #e6e6e6;
+  color: var(--principal);
   margin-right: 10px;
   background-color: #000905;
   text-align: center;
@@ -615,7 +625,7 @@ input[type="submit"]:hover {
   background-color: #000905;
   padding: 15px 10px;
   text-align: center;
-  color: #e6e6e6;
+  color: var(--principal);
 }
 .pie-pagina .pie-pagina-inf small {
   font-size: 15px;

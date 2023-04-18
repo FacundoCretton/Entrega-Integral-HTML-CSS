@@ -152,14 +152,24 @@ main {
 }
 
 .hero-card {
-  width: 400px;
+  width: 500px;
   color: var(--blanco);
-  border: 10px inset var(--bg1);
+  border: 7px solid black;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
+  /* position: relative; */
+}
+
+.hero-card-p {
+  /* position: relative; */
+  bottom: 0px;
+  color: var(--blanco);
+  background-color: #000;
+  padding: 4px 10px;
+  opacity: 0.8;
+  text-align: center;
 }
 /* PRODUCTS */
 #products {

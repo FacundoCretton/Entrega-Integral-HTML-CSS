@@ -62,8 +62,12 @@ body {
 }
 .formulario {
   background: #fff;
-  margin-top: 150px;
   padding: 3px;
+  /* margin: auto; */
+  width: 40%;
+  /* margin-top: 150px; */
+  margin: 100px auto 70px;
+  border-radius: 15px;
 }
 h1 {
   text-align: center;
@@ -150,7 +154,6 @@ p {
     display: flex;
   }
   .formulario {
-    margin: auto;
     width: 500px;
     margin-top: 150px;
     border-radius: 15px;
@@ -159,5 +162,13 @@ p {
 @media (max-width: 576px) {
   .formulario {
     width: 80%;
+  }
+  .button {
+    font-size: 15px;
+    padding: 10px 5px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
   }
 }

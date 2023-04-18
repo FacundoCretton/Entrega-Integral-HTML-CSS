@@ -602,10 +602,12 @@ input[type="submit"]:hover {
   color: var(--principal);
   margin-bottom: 25px;
   font-size: 20px;
+  text-align: center;
 }
 .pie-pagina .pie-pagina-sup .box p {
   color: var(--principal);
   margin-bottom: 10px;
+  text-align: center;
 }
 .pie-pagina .pie-pagina-sup .red-social a {
   display: inline-block;
@@ -629,4 +631,9 @@ input[type="submit"]:hover {
 }
 .pie-pagina .pie-pagina-inf small {
   font-size: 15px;
+}
+
+.red-social {
+  display: flex;
+  justify-content: center;
 }

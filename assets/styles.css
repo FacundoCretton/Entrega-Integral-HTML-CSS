@@ -145,7 +145,10 @@ main {
   background-color: black;
   color: var(--blanco);
 }
-
+.hero-button-black:hover,
+.hero-button-white:hover {
+  background-color: rgb(66, 62, 62);
+}
 .hero-button-white {
   background-color: var(--blanco2);
   color: black;
